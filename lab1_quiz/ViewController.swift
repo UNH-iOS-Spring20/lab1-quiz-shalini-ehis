@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     
     let questions: [String] = [
         "What is 7+7",
-        "What is cognac made from"
+        "What is cognac made from",
+        "What i sthe capital of India?"
     ]
     
     let answers: [String] = [
-        "14", "Grapes"]
+        "14", "Grapes", "Delhi"]
     
     var currentQuestionIndex: Int = 0
     
