@@ -13,11 +13,28 @@ class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
+    let questions: [String] = [
+        "What is 7+7",
+        "What is cognac made from"
+    ]
+    
+    let answers: [String] = [
+        "14", "Grapes"]
+    
+    var currentQuestionIndex: Int = 0
+    
     @IBAction func showNextQuestion(_sender: UIButton){
         os_log("showing next question")
+        currentQuestionIndex += 1
+        
+        if currentQuestionIndex == questions.count {
+            currentQuestionIndex = 0
+        }
+        questionLabel.text = questions[currentQuestionIndex]
     }
     @IBAction func showAnswer(_sender: UIButton){
         os_log("showing answer")
+        answerLabel.text = answers[currentQuestionIndex]
     }
     
     override func viewDidLoad() {
