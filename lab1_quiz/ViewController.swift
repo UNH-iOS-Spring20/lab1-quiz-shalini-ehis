@@ -33,6 +33,7 @@ class ViewController: UIViewController {
             currentQuestionIndex = 0
         }
         questionLabel.text = questions[currentQuestionIndex]
+        answerLabel.text = "???"
     }
     @IBAction func showAnswer(_sender: UIButton){
         os_log("showing answer")
@@ -42,7 +43,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         os_log("I just loaded")
-        questionLabel.text = "i am a question"
-        answerLabel.text = "i'm an answer"
+        questionLabel.text = questions[0]
+        answerLabel.text = "???"
     }
 }
