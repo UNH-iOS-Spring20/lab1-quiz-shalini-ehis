@@ -10,20 +10,25 @@ import UIKit
 import os
 
 class ViewController: UIViewController {
+    //MARK:- Initializing variables
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
-    
-    let questions: [String] = [
-        "What is 7+7",
-        "What is cognac made from",
-        "What is the capital of India?"
-    ]
-    //comment
-    
-    let answers: [String] = [
-        "14", "Grapes", "Delhi"]
-    
+    @IBOutlet weak var NextQuestion: UIButton!
+    @IBOutlet weak var showAnswer: UIButton!
+   
     var currentQuestionIndex: Int = 0
+    //MARK:- Questions Array
+    let questions: [String] = [
+        "A means of compressing images by blurring the boundaries between different colors while maintaining all brightness information",
+        "What is cognac made from",
+"A digital circuit capable of holding a single digit?"
+    ]
+  
+    //MARK:- Answers array
+    let answers: [String] = [
+        "JPEG", "Grapes", "Flip-flop"]
+    
+   
     
     @IBAction func showNextQuestion(_sender: UIButton){
         os_log("showing next question")
@@ -33,7 +38,6 @@ class ViewController: UIViewController {
             currentQuestionIndex = 0
         }
         questionLabel.text = questions[currentQuestionIndex]
-        answerLabel.text = "???"
     }
     @IBAction func showAnswer(_sender: UIButton){
         os_log("showing answer")
@@ -43,7 +47,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         os_log("I just loaded")
-        questionLabel.text = questions[0]
-        answerLabel.text = "???"
+        questionLabel.sizeToFit()
+        //configureViewController()
     }
+    
+    //MARK:- constraints
+//    func configureViewController(){
+//        let stackView = UIStackView(arrangedSubviews: [questionLabel,NextQuestion,answerLabel,showAnswer])
+//        stackView.axis = .vertical
+//        stackView.spacing = 10
+//        stackView.distribution = .fillEqually
+//        view.addSubview(stackView)
+//        stackView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 50, paddingLeft: 50, paddingBottom: 50, paddingRight: 50, width: 0, height: 0)
+  //  }
 }

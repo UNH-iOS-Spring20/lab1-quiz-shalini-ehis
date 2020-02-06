@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46FFF1A223EC8C6F002E2295 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFF1A123EC8C6F002E2295 /* extentions.swift */; };
 		8CFE456C23E3B62500EB6C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE456B23E3B62500EB6C47 /* AppDelegate.swift */; };
 		8CFE456E23E3B62500EB6C47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE456D23E3B62500EB6C47 /* SceneDelegate.swift */; };
 		8CFE457023E3B62500EB6C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE456F23E3B62500EB6C47 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46FFF1A123EC8C6F002E2295 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
 		8CFE456823E3B62500EB6C47 /* lab1_quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab1_quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFE456B23E3B62500EB6C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFE456D23E3B62500EB6C47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				8CFE457423E3B62800EB6C47 /* Assets.xcassets */,
 				8CFE457623E3B62800EB6C47 /* LaunchScreen.storyboard */,
 				8CFE457923E3B62800EB6C47 /* Info.plist */,
+				46FFF1A123EC8C6F002E2295 /* extentions.swift */,
 			);
 			path = lab1_quiz;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FFF1A223EC8C6F002E2295 /* extentions.swift in Sources */,
 				8CFE457023E3B62500EB6C47 /* ViewController.swift in Sources */,
 				8CFE456C23E3B62500EB6C47 /* AppDelegate.swift in Sources */,
 				8CFE456E23E3B62500EB6C47 /* SceneDelegate.swift in Sources */,
