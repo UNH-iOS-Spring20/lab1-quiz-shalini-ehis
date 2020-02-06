@@ -48,9 +48,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         os_log("I just loaded")
         questionLabel.sizeToFit()
-        //configureViewController()
-    }
+      }
     
+    
+    
+      //configureViewController()
     //MARK:- constraints
 //    func configureViewController(){
 //        let stackView = UIStackView(arrangedSubviews: [questionLabel,NextQuestion,answerLabel,showAnswer])
